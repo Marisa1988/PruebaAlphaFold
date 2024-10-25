@@ -14,23 +14,7 @@ def get_alphafold_info():
 
 if __name__ == "__main__":
     get_alphafold_info()
-    
-import requests
-
-def get_available_uniprot_ids():
-    # Predefined list of UniProt IDs for demonstration
-    uniprot_ids = [
-        "P12345", "Q9Y2X3", "P0DTC2", "Q8N158", "P69905",
-        "P68871", "P00734", "P69905", "P68871", "P00734"
-    ]
-    
-    print("Here are some examples of UniProt IDs:")
-    for uniprot_id in uniprot_ids:
-        print(f"UniProt ID: {uniprot_id}")
-
-if __name__ == "__main__":
-    get_available_uniprot_ids()
-    
+      
 import requests
 
 def explain_uniprot_id():
