@@ -62,7 +62,7 @@ def get_protein_info(uniprot_id):
     url = f"https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}"
     response = requests.get(url)
     
-if response.status_code == 200:
+    if response.status_code == 200:
         data = response.json()
         print(f"Successfully accessed data for UniProt ID: {uniprot_id}")
         for entry in data:
