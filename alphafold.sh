@@ -19,7 +19,7 @@ module load alphafold
 
 alphafold_full_db.sh \
     --fasta_paths=uniprotkb_2024_12_04.fasta.gz \
-    --output_dir=~/scratch \
+    --output_dir=~/blue/hmedeiros/moralesmurallesm/scratch \
     --max_template_date=2020-05-14 \
     --use_gpu_relax=1
 
