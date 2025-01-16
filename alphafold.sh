@@ -13,7 +13,7 @@ date;hostname;pwd
 
 
 
-module load alphafold
+module load alphafold/2.3.1 
 
 
 
