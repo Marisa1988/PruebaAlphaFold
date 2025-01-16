@@ -1,0 +1,39 @@
+Thu Jan 16 14:32:46 EST 2025
+c1010a-s17.ufhpc
+/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold
+
+The following have been reloaded with a version change:
+  1) alphafold/2.3.1 => alphafold/2.3.2
+
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (335) bind mounts
+/sbin/ldconfig.real: Can't create temporary cache file /etc/ld.so.cache~: Read-only file system
+I0116 14:32:54.511028 22808946112320 templates.py:857] Using precomputed obsolete pdbs /data/reference/alphafold/2.3.2/pdb_mmcif/obsolete.dat.
+I0116 14:32:55.378785 22808946112320 xla_bridge.py:353] Unable to initialize backend 'tpu_driver': NOT_FOUND: Unable to find driver in registry given worker: 
+I0116 14:32:56.394704 22808946112320 xla_bridge.py:353] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: Interpreter Host CUDA
+I0116 14:32:56.395127 22808946112320 xla_bridge.py:353] Unable to initialize backend 'tpu': module 'jaxlib.xla_extension' has no attribute 'get_tpu_client'
+I0116 14:32:56.395203 22808946112320 xla_bridge.py:353] Unable to initialize backend 'plugin': xla_extension has no attributes named get_plugin_device_client. Compile TensorFlow with //tensorflow/compiler/xla/python:enable_plugin_device set to true (defaults to false) to enable this.
+I0116 14:33:02.561341 22808946112320 run_alphafold.py:424] Have 5 models: ['model_1_pred_0', 'model_2_pred_0', 'model_3_pred_0', 'model_4_pred_0', 'model_5_pred_0']
+I0116 14:33:02.561564 22808946112320 run_alphafold.py:438] Using random seed 652728753589802118 for the data pipeline
+I0116 14:33:02.561736 22808946112320 run_alphafold.py:185] Predicting rcsb_pdb_1GAL
+Traceback (most recent call last):
+  File "/app/alphafold/run_alphafold.py", line 468, in <module>
+    app.run(main)
+  File "/opt/conda/lib/python3.8/site-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/opt/conda/lib/python3.8/site-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/app/alphafold/run_alphafold.py", line 443, in main
+    predict_structure(
+  File "/app/alphafold/run_alphafold.py", line 189, in predict_structure
+    os.makedirs(output_dir)
+  File "/opt/conda/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/conda/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/conda/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  [Previous line repeated 3 more times]
+  File "/opt/conda/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 30] Read-only file system: '~'
+Thu Jan 16 14:33:08 EST 2025
