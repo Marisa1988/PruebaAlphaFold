@@ -1,1 +1,1 @@
-# Pruebas AlphaFold y OpenFold
+# Pruebas AlphaFold
