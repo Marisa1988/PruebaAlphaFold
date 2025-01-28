@@ -11,11 +11,7 @@
 
 date;hostname;pwd
 
-
-
 module load alphafold/2.3.1 
-
-
 
 alphafold_full_db.sh \
     --fasta_paths=/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold/3TGLM3.fasta,/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold/3TGLM4.fasta,/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold/3TGLM5.fasta,/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold/3TGLM6.fasta,/blue/hmedeiros/moralesmurallesm/PruebaAlphaFold/3TGLM7.fasta \
