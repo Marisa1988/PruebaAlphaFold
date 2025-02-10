@@ -2,7 +2,7 @@
 #SBATCH --partition=gpu
 #SBATCH --constraint=a100
 #SBATCH --nodes=1
-#SBATCH --ntasks=8
+#SBATCH --ntasks=16
 #SBATCH --gpus=1
 #SBATCH --mem=300gb
 #SBATCH --time=168:00:00
